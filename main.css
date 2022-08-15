@@ -141,5 +141,110 @@ body {
   color: #B4DD6B;
 }
 
+.main-footer {
+  font-size: 0.8rem;
+}
+
+.main-footer-info {
+  text-align: center;
+  background-color: #8AC449;
+}
+
+.footer-info__logo,
+.footer-info__description {
+  display: inline-block;
+}
+
+.footer-info__logo {
+  bottom: 0.7vh;
+  position: relative;
+  padding: 0 1.25rem;
+}
+
+.footer-info__description {
+  padding: 0 1.25rem;
+  margin: 1rem 0;
+  text-align: left;
+  width: 50vw;
+  color: #294C2A;
+  font-weight: bold;
+  border-left: 1px solid #294C2A;
+}
+
+.main-footer-menu {
+  text-align: center;
+}
+
+.footer-menu__links,
+.footer-menu__links-network,
+.footer-menu__copyright,
+.footer-menu__decor-2 {
+  display: inline-block;
+  margin: 1rem 1rem;
+  height: 112px;
+}
+
+.footer-menu__links > ul,
+.footer-menu__links-network > ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.footer-menu__link {
+  padding: 0.3rem 0;
+}
+
+.footer-menu__link a {
+  text-decoration: none;
+  color: #4C8562;
+}
+
+.footer-menu__link a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu__links-network ul {
+  padding: 0;
+}
+
+.footer-menu__links-network ul li {
+  display: inline;
+}
+
+.footer-menu__copyright {
+  text-align: left;
+  width: 25%;
+  color: #9A9A9A;
+}
+
+.footer-menu__decor-1 {
+  position: relative;
+  background-image: url(images-icons/watermelon2.png);
+  background-repeat: no-repeat;
+  width: 83px;
+  height: 67px;
+  left: 4vw;
+  bottom: 1.3vh;
+
+}
+
+.footer-menu__decor-2 {
+  float: right;
+  position: relative;
+  margin: 0;
+  background-image: url(images-icons/watermelon1.png);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 149px;
+  right: 19vw;
+  top: 2vh;
+}
+
+.footer-menu_end {
+  height: 20px;
+  background-color: #8AC449;
+}
+
 
 
