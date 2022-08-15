@@ -48,7 +48,7 @@ body {
   outline: none;
   border: none;
   border-radius: 3px 0 0 3px;
-  color: #134928;
+  color: #2A5C0B;
 }
 
 .search-menu__button {
@@ -87,7 +87,7 @@ body {
   background-color: #5B8A4B;
 }
 
-.fa {
+.fa-search, .fa-pencil-square-o {
   position: relative;
   padding: 0.3rem;
   top: 2px;
@@ -95,7 +95,50 @@ body {
 }
 
 .main-nav {
+  padding: 0.9rem;
+  text-align: center;
+  background-color: #8AC449;
+}
 
+.main-nav__links {
+  position: relative;
+  left: 5%;
+  display: inline-block;
+}
+
+.main-nav__link {
+  padding: 0.9rem 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2A5C0B;
+}
+
+.main-nav__link:hover {
+  color: white;
+  background: center no-repeat url("images/menu-active.png");
+  cursor: pointer;
+}
+
+.main-nav__link-account {
+  position: relative;
+  left: 20%;
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav__link-account:hover {
+  color: #2A5C0B;
+}
+
+.fa-sign-in, .fa-key {
+  padding: 0 0.4rem 0;
+  color: #2A5C0B;
+}
+
+.fa-circle {
+  font-size: 0.8rem;
+  color: #B4DD6B;
 }
 
 .main-footer {
@@ -202,5 +245,6 @@ body {
   height: 20px;
   background-color: #8AC449;
 }
+
 
 
