@@ -5,31 +5,37 @@
     <title>ARBYZ.BY Самые сочные объявления</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="main_nav_and_footer.css" type="text/css">
+    <link rel="stylesheet" href="main_style.css" type="text/css">
   </head>
   <body>
-    <div class="main-banner">БАННЕР</div><!--просто место для рекламы, возможно стоит обернуть в <aside>-->
+    <div class="main-banner"><p>БАННЕР</p></div>
     <header class="main-header">
-      <div class="main-header__logo"><img src="images-icons/logo.png" alt="no logo"></div>
-      <div class="main-header__search-menu">
-        <form class="search-menu">
-          <input type="search" class="search-menu__line" placeholder="Я ищу ...">
-          <button type="submit" class="search-menu__button"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </form>
-        <div class="search-menu__advert"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Добавить объявление</div>
+      <div class="header-logo"><img src="images-icons/logo.png" alt="no logo"></div>
+      <div class="header-search">
+        <div class="header-search__line">
+          <input type="search" class="line-text" placeholder="Я ищу ...">
+          <button type="submit" class="line-button"><i class="fa fa-search"></i>
+          </button>
+        </div>
+        <div class="header-advert"><div class="advert__button"><i class="fa fa-pencil-square-o"></i>Добавить объявление</div></div>
       </div>
     </header>
     <nav class="main-nav">
-      <div class="main-nav__links">
-        <a href="#" class="main-nav__link">Главная</a>
-        <span class="main-nav__link-circle" ><i class="fa fa-circle" aria-hidden="true"></i></span>
-        <a href="#" class="main-nav__link">Новости</a>
-        <span class="main-nav__link-circle" ><i class="fa fa-circle" aria-hidden="true"></i></span>
-        <a href="#" class="main-nav__link">Реклама</a>
-        <span class="main-nav__link-circle" ><i class="fa fa-circle" aria-hidden="true"></i></span>
-        <a href="#" class="main-nav__link">О нас</a>
-        <a href="#" class="main-nav__link-account"><i class="fa fa-sign-in" aria-hidden="true"></i>Вход</a>
-        <a href="#" class="main-nav__link-account"><i class="fa fa-key" aria-hidden="true"></i>Регистрация</a>
+      <div class="main-nav-links">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#">Главная</a></li>
+          <li class="nav-link circle"><i class="fa fa-circle"></i></li>
+          <li class="nav-link"><a href="#">Новости</a></li>
+          <li class="nav-link circle"><i class="fa fa-circle"></i></li>
+          <li class="nav-link"><a href="#">Реклама</a></li>
+          <li class="nav-link circle"><i class="fa fa-circle"></i></li>
+          <li class="nav-link"><a href="#">О нас</a></li>
+        </ul>
+        <ul class="accounts-links">
+          <li class="nav-link account-link"><a href="#"><i class="fa fa-sign-in"></i>Вход</a></li>
+          <li class="nav-link account-link"><a href="#"><i class="fa fa-key"></i>Регистрация</a></li>
+        </ul>
       </div>
     </nav>
     <footer class="main-footer">
