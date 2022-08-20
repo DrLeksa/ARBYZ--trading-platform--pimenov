@@ -37,3 +37,66 @@
   text-transform: uppercase;
   color: white;
 }
+
+/*спецпредложения*/
+
+.main-aside {
+  margin: 2rem;
+  width: 330px;
+  background-color: #F2F2F2;
+}
+
+.aside-header {
+  padding: 1rem;
+  color: white;
+  background-color: #F8343B;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.aside-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside-block {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.aside-image {
+  padding: 0.6rem;
+  width: 60px;
+  border-radius: 50px;
+}
+
+.aside-link {
+  margin: auto;
+
+  padding: 0.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.aside-link:hover{
+  text-decoration: underline;
+}
+
+.button-block {
+  padding: 1rem 2.5rem;
+}
+
+.aside-button__advert {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 3px;
+  background-color: #F8343B;
+}
+
+.aside-button__advert:hover {
+  background-color: #4C8562;
+  cursor: pointer;
+}
