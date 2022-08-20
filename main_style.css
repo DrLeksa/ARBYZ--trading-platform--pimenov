@@ -169,3 +169,67 @@
 .clear {
   clear: both;
 }
+
+/*спецпредложения*/
+
+.main-aside {
+  margin: 2rem;
+  width: 330px;
+
+}
+
+.aside-header {
+  padding: 1rem;
+  color: white;
+  background-color: #F8343B;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.aside-blocks {
+
+}
+
+.aside-block {
+  border-top: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #F2F2F2;
+}
+
+.aside-image {
+  padding: 0.6rem;
+  width: 60px;
+  border-radius: 50px;
+}
+
+.aside-link {
+  margin: auto;
+  flex-basis: 240px;
+  padding: 0.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.aside-link:hover{
+  text-decoration: underline;
+}
+
+.button-block {
+  padding: 1rem 2.5rem;
+  border: none;
+}
+
+.aside-button__advert {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 3px;
+  background-color: #F8343B;
+}
+
+.aside-button__advert:hover {
+  background-color: #4C8562;
+  cursor: pointer;
