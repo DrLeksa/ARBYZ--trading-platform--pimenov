@@ -43,7 +43,7 @@
 .main-aside {
   margin: 2rem;
   width: 330px;
-  background-color: #F2F2F2;
+
 }
 
 .aside-header {
@@ -56,14 +56,15 @@
 }
 
 .aside-blocks {
-  display: flex;
-  flex-wrap: wrap;
+
 }
 
 .aside-block {
+  border-top: 2px solid white;
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: #F2F2F2;
 }
 
 .aside-image {
@@ -74,7 +75,7 @@
 
 .aside-link {
   margin: auto;
-
+  flex-basis: 240px;
   padding: 0.3rem;
   text-decoration: none;
   color: black;
@@ -86,6 +87,7 @@
 
 .button-block {
   padding: 1rem 2.5rem;
+  border: none;
 }
 
 .aside-button__advert {
