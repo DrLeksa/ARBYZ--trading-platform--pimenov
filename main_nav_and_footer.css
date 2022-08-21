@@ -171,110 +171,109 @@ body {
   color: #2A5C0B;
 }
 
-.main-footer {
-  font-size: 0.8rem;
-}
+ /* footer */
 
-.main-footer-info {
-  text-align: center;
+.main-bottom_section {
+  font-size: 0.8rem;
   background-color: #8AC449;
 }
 
-.footer-info__logo,
-.footer-info__description {
-  display: inline-block;
+.bottom_section-line {
+  display: flex;
+  justify-content: center;
 }
 
-.footer-info__logo {
-  bottom: 0.7vh;
-  position: relative;
-  padding: 0 1.25rem;
+.bottom_section-line__logo {
+  margin: auto 1.25rem;
 }
 
-.footer-info__description {
+.bottom_section-line__text {
   padding: 0 1.25rem;
-  margin: 1rem 0;
-  text-align: left;
   width: 50vw;
   color: #294C2A;
-  font-weight: bold;
   border-left: 1px solid #294C2A;
 }
 
-.main-footer-menu {
-  text-align: center;
+.main-footer {
+  margin: 1rem 0 0;
 }
 
-.footer-menu__links,
-.footer-menu__links-network,
-.footer-menu__copyright,
-.footer-menu__decor-2 {
-  display: inline-block;
-  margin: 1rem 1rem;
-  height: 112px;
+.footer-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.footer-menu__links > ul,
-.footer-menu__links-network > ul {
-  padding: 0;
+.footer-block {
+  margin: 0 0.4rem;
+}
+
+.list_background {
+  background-image: url(images-icons/watermelon2.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.footer-block__links {
+  margin: 0;
   list-style-type: none;
-  text-align: left;
 }
 
-.footer-menu__link {
-  padding: 0.3rem 0;
+.footer-block__list {
+  padding: 0.5rem 0;
 }
 
-.footer-menu__link a {
+.footer-block__link {
   text-decoration: none;
   color: #4C8562;
 }
 
-.footer-menu__link a:hover {
+.footer-block__link:hover {
   text-decoration: underline;
 }
 
-.footer-menu__links-network ul {
-  padding: 0;
+.social_networks {
+  text-align: center;
 }
 
-.footer-menu__links-network ul li {
-  display: inline;
+.social_networks-header {
+  padding: 0.5rem 0 0;
+  text-transform: uppercase;
 }
 
-.footer-menu__copyright {
-  text-align: left;
-  width: 25%;
-  color: #9A9A9A;
+.footer-block__social_networks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 17vw;
 }
 
-.footer-menu__decor-1 {
-  position: relative;
-  background-image: url(images-icons/watermelon2.png);
-  background-repeat: no-repeat;
-  width: 83px;
-  height: 67px;
-  left: 4vw;
-  bottom: 1.3vh;
-
+.footer-block__social_network {
+  padding: 0.4rem;
 }
 
-.footer-menu__decor-2 {
-  float: right;
-  position: relative;
+.footer-block__text {
+  padding: 0.5rem 0 0 0;
   margin: 0;
+  width: 18vw;
+  font-size: 0.9rem;
+  color: #9a9a9a;
+}
+
+.footer-block__image {
+  margin: 0;
+  width: 150px;
+  height: 150px;
   background-image: url(images-icons/watermelon1.png);
   background-repeat: no-repeat;
-  width: 150px;
-  height: 149px;
-  right: 19vw;
-  top: 2vh;
+  background-position-y: bottom;
 }
 
-.footer-menu_end {
+.footer-underline {
+  width: 100%;
   height: 20px;
   background-color: #8AC449;
 }
-
 
 
