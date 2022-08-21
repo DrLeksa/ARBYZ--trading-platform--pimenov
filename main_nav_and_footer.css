@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 body {
-  font-family: 'Nunito', sans-serif;
   margin: 0;
+  font-family: 'Nunito', sans-serif;
 }
+
+  /* верхний баннер */
 
 .main-banner__top {
   display: flex;
@@ -15,36 +17,33 @@ body {
 
 .banner-text {
   margin: auto;
-  font-size: 1vw;
   text-align: center;
+  font-size: 1vw;
   font-weight: bold;
   text-shadow: 0.1vw 0.1vw 0 #8AC449;
   color: white;
 }
 
+  /* header: поисковая строка */
+
 .main-header {
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  align-items: center;
   text-align: center;
-  align-items: center;
-}
-
-.header-logo,
-.header-search {
-
 }
 
 .header-search {
-  justify-content: center;
-  align-items: center;
   padding: 1rem 1rem 1rem 2rem;
   margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 55%;
   height: 40px;
-  background-color: #CDE281;
   border-radius: 5px;
-  display: flex;
+  background-color: #CDE281;
 }
 
 .header-search__line {
@@ -52,30 +51,30 @@ body {
   flex-basis: 75%;
 }
 .line-text {
-  width: 90%;
   padding: 0 0.7rem;
+  width: 90%;
   height: 2.2rem;
+  outline: none;
   border: none;
   border-radius: 3px 0 0 3px;
-  outline: none;
   color: #2A5C0B;
 }
 
 .line-button {
   width: 2.5rem;
   height: 2.2rem;
-  border: none;
-  background: white;
-  text-align: center;
-  color: #4C8562;
-  border-radius: 0 3px 3px 0;
-  cursor: pointer;
   font-size: 1.25rem;
+  text-align: center;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  color: #4C8562;
+  background-color: white;
+  cursor: pointer;
 }
 
 .line-button:hover {
-  background: #F8343B;
   color: white;
+  background: #F8343B;
   border-radius: 0 3px 3px 0;
 }
 
@@ -86,12 +85,12 @@ body {
 }
 
 .advert__button {
-  font-size: 0.9rem;
   padding: 0.5rem;
   text-transform: uppercase;
   font-weight: normal;
-  color: white;
+  font-size: 0.9rem;
   border-radius: 3px;
+  color: white;
   background-color: #F8343B;
 }
 
@@ -100,57 +99,55 @@ body {
   cursor: pointer;
 }
 
-.main-nav {
-
-}
+  /* основная навигация */
 
 .main-nav-links {
+  padding: 1rem;
   display: flex;
   justify-content: center;
-  padding: 1rem;
   background-color: #8AC449;
 }
 
 .nav-links {
-  position: absolute;
   margin: 0;
-  list-style-type: none;
   display: flex;
   justify-content: center;
+  position: absolute;
+  list-style-type: none;
 }
 
 .nav-link a {
+  padding: 1rem 2rem;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 1rem 2rem;
-  color: #2A5C0B;
   font-weight: bold;
+  color: #2A5C0B;
 }
 
 .nav-links li a:hover {
-  /*background-image: url("images/menu-active.png");
+  /*
+  background-image: url("images/menu-active.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;*/
-
+  background-size: 100%;
+  */
   background-color: #F8343B;
   border-radius: 50%;
-
   color: white;
 }
 
 .circle {
   padding: 0 1.5rem;
-  color: #CDE281;
   font-size: 0.8rem;
+  color: #CDE281;
 }
 
 .accounts-links {
+  padding: 0;
+  margin: 0;
+  display: flex;
   position: relative;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
   left: 40%;
 }
 
@@ -171,7 +168,7 @@ body {
   color: #2A5C0B;
 }
 
- /* footer */
+  /* footer */
 
 .main-bottom_section {
   font-size: 0.8rem;
