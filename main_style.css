@@ -63,11 +63,7 @@
 }
 
 .advert_box__button:hover {
-  /*color: #DEF58C;
-  background-color: rgba(120, 0, 0, 0.8);*/
-
-  color: #2A5C0B;
-  background-color: rgba(138, 196, 73, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
   /* новости */
