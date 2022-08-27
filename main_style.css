@@ -264,11 +264,11 @@
   background-color: #F8343B;
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .aside-button__advert:hover {
   background-color: #4C8562;
-  cursor: pointer;
 }
 
   /* два баннера в 'aside' */
