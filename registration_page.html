@@ -9,69 +9,221 @@
     <link rel="stylesheet" href="registration_style.css" type="text/css">
   </head>
   <body>
-    <section>
-      <div><p>Главная</p><span>/</span><p>Регистрация</p></div>
-      <div>
-        <form action="">
-          <h2>Заполните анкету пользователя для регистрации на arbyz.by</h2>
-          <div>
-            <label>Вы представляете</label>
-            <input type="radio">
-            <input type="radio">
+    <div class="main-banner__top"><p class="banner-text">БАННЕР</p></div>
+    <header class="main-header">
+      <div class="header-logo"><img src="images-icons/logo.png" alt="no logo"></div>
+      <div class="header-search">
+        <div class="header-search__line">
+          <input type="search" class="line-text" placeholder="Я ищу ...">
+          <button type="submit" class="line-button"><i class="fa fa-search"></i>
+          </button>
+        </div>
+        <div class="header-advert">
+          <div class="advert__button"><i class="fa fa-pencil-square-o"></i>Добавить объявление</div>
+        </div>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <div class="main-nav-links">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="main_page.html">Главная</a></li>
+          <li class="nav-link circle"><i class="fa fa-circle"></i></li>
+          <li class="nav-link"><a href="#">Новости</a></li>
+          <li class="nav-link circle"><i class="fa fa-circle"></i></li>
+          <li class="nav-link"><a href="#">Реклама</a></li>
+          <li class="nav-link circle"><i class="fa fa-circle"></i></li>
+          <li class="nav-link"><a href="#">О нас</a></li>
+        </ul>
+        <ul class="accounts-links">
+          <li class="nav-link account-link"><a href="#"><i class="fa fa-sign-in"></i>Вход</a></li>
+          <li class="nav-link account-link">
+            <a href="registration_page.html"><i class="fa fa-key"></i>Регистрация</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="pages_navigation">
+      <a class="pages_navigation-link" href="main_page.html">Главная</a>
+      <span>/</span>
+      <a class="pages_navigation-link" href="registration_page.html">Регистрация</a>
+    </div>
+    <section class="registration">
+      <h2 class="registration-header">Заполните анкету пользователя для регистрации на arbyz.by</h2>
+      <form class="registration-form" action="" >
+        <div class="registration-sections">
+          <div class="registration-section">
+            <div class="registration-section__name">Вы представляете</div>
+            <div class="registration-section__field">
+              <input class="section__field-radio" type="radio" id="private_person" name="user" value="private_person"
+                     required>
+              <label for="private_person">Частное лицо</label>
+              <input class="section__field-radio" type="radio" id="company" name="user" value="company" required>
+              <label for="company">Компания</label>
+            </div>
           </div>
-          <div>
-            <label>Имя и Фамилия</label>
-            <input type="text">
+          <div class="registration-section">
+            <div class="registration-section__name">Имя и Фамилия<span class="required_field">*</span></div>
+            <div class="registration-section__field">
+              <label for="user_name"></label>
+              <input class="section__field-line_text" type="text" id="user_name" name="user_name" required>
+            </div>
           </div>
-          <div>
-            <label>Фотогорафия<span>Объявления с фото вызывают больше доверия</span></label>
-            <input type="file">
+          <div class="registration-section">
+            <div class="registration-section__name">
+              Фотогорафия<p class="photo-subtext">Объявления с фото вызывают больше доверия</p></div>
+            <div class="registration-section__field">
+              <label></label>
+              <input type="file">
+            </div>
           </div>
-          <div>
-            <label>Номер телефона</label>
-            <input type="text">
+          <div class="registration-section">
+            <div class="registration-section__name">Номер телефона</div>
+            <div class="registration-section__field">
+              <label for="user_phone"></label>
+              <input class="section__field-line_text" type="text" id="user_phone" name="user_phone">
+            </div>
           </div>
-          <div>
-            <label>Область</label>
-            <select>
-              <option disabled selected></option>
-              <option value="">Брестская область</option>
-              <option value="">Витебская область</option>
-              <option value="">Гомельская область</option>
-              <option value="">Гродненская область</option>
-              <option value="">Минская область</option>
-              <option value="">Могилевская область</option>
-            </select>
+          <div class="registration-section">
+            <div class="registration-section__name">Область</div>
+            <div class="registration-section__field">
+              <label></label>
+              <select class="section__field-line_text">
+                <option class="section__field-option" disabled selected></option>
+                <option class="section__field-option" value="">Брестская</option>
+                <option class="section__field-option" value="">Витебская</option>
+                <option class="section__field-option" value="">Гомельская</option>
+                <option class="section__field-option" value="">Гродненская</option>
+                <option class="section__field-option" value="">Минская</option>
+                <option class="section__field-option" value="">Могилевская</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <label>Город</label>
-            <select>
-              <option></option>
-              <option></option>
-              <option></option>
-              <option></option>
-            </select>
+          <div class="registration-section">
+            <div class="registration-section__name">Город</div>
+            <div class="registration-section__field">
+              <label></label>
+              <select>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
           </div>
-          <div>
-            <label>E-mail адрес</label>
-            <input type="email">
+          <div class="registration-section">
+            <div class="registration-section__name">E-mail адрес<span class="required_field">*</span></div>
+            <div class="registration-section__field">
+              <label for="user_email"></label>
+              <input class="section__field-line_text" type="email" id="user_email" name="user_email" required>
+            </div>
           </div>
-          <div>
-            <label>Подтвердите e-mail</label>
-            <input type="email">
+          <div class="registration-section">
+            <div class="registration-section__name">Подтвердите e-mail<span class="required_field">*</span></div>
+            <div class="registration-section__field">
+              <label for="user_re-email"></label>
+              <input class="section__field-line_text" type="email" id="user_re-email" name="user_re-email" required>
+            </div>
           </div>
-          <div>
-            <label>Пароль</label>
-            <input type="password">
+          <div class="registration-section">
+            <div class="registration-section__name">Пароль<span class="required_field">*</span></div>
+            <div class="registration-section__field">
+              <label for="user_password"></label>
+              <input class="section__field-line_text" type="password" id="user_password" name="user_password" required>
+            </div>
           </div>
-          <div>
-            <label>Подтвердите пароль</label>
-            <input type="password">
+          <div class="registration-section">
+            <div class="registration-section__name">Подтвердите пароль<span class="required_field">*</span></div>
+            <div class="registration-section__field">
+              <label for="user_re-password"></label>
+              <input class="section__field-line_text" type="password" id="user_re-password" name="user_re-password"
+                     required>
+            </div>
           </div>
-          <!-- капча -->
-          <div></div>
-        </form>
+          <div class="registration-section"> <!-- капча -->
+            <div class="registration-section__name">"Капча"</div>
+            <div class="registration-section__field">
+              <label for="captcha"></label>
+              <input class="section__field-line_text" type="text" id="captcha" name="captcha" required>
+            </div>
+          </div>
+          <div class="data_processing-block">
+            <div class="data_processing-block__header">Согласие на обработку данных</div>
+            <div class="data_processing-block__content">
+              <div>
+                <input class="data_processing-block__radio" type="radio" id="data_processing" name="data_processing"
+                       required>
+              </div>
+              <label class="data_processing-block__text" for="data_processing"><span class="required_field">*</span>Я
+              соглашаюсь с <a class="block__text-link" href="#">правилами использования сервиса</a>, а также с
+              передачей и обработкой моих данных в ARBYZ.BY Я подтверждаю своё совершеннолетие и ответственность за
+              размещение объявления.</label>
+            </div>
+          </div>
+          <div class="registration-section__button">
+            <button class="registration-section__button_style" type="submit">Создать</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="main-bottom_section">
+      <div class="bottom_section-line">
+        <img class="bottom_section-line__logo" src="images-icons/textlogo.png" alt="no image" >
+        <h4 class="bottom_section-line__text">Бесплатные объявления Беларуси на ARBYZ.BY - здесь вы найдёте то, что
+          искали. Воспользовавшись функцией поиска вы, без труда, найдёте уже опубликованные объявленя интересующей вас
+          тематики. С помощью сайта объявлений ARBYZ.BY вы можете найти, продать или купить практически всё, что
+          угодно.</h4>
       </div>
     </section>
+    <footer class="main-footer">
+      <div class="footer-blocks">
+        <div class="footer-block list_background">
+          <ul class="footer-block__links">
+            <li class="footer-block__list"><a class="footer-block__link" href="#">Условия использования</a></li>
+            <li class="footer-block__list"><a class="footer-block__link" href="#">Конфиденциальность</a></li>
+            <li class="footer-block__list"><a class="footer-block__link" href="#">О нас</a></li>
+          </ul>
+        </div>
+        <div class="footer-block">
+          <ul class="footer-block__links">
+            <li class="footer-block__list"><a class="footer-block__link" href="#">Помощь</a></li>
+            <li class="footer-block__list"><a class="footer-block__link" href="#">Контактная информация</a></li>
+            <li class="footer-block__list"><a class="footer-block__link" href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+        <div class="footer-block social_networks">
+          <div class="social_networks-header">Следите за нами в соцсетях</div>
+          <div class="footer-block__social_networks">
+            <div class="footer-block__social_network">
+              <a href="#"><img src="images-icons/network_icons/twitter_icon.png" alt="no img"></a>
+            </div>
+            <div class="footer-block__social_network">
+              <a href="#"><img src="images-icons/network_icons/share_icon.png" alt="no img"></a>
+            </div>
+            <div class="footer-block__social_network">
+              <a href="#"><img src="images-icons/network_icons/google+_icon.png" alt="no img"></a>
+            </div>
+            <div class="footer-block__social_network">
+              <a href="#"><img src="images-icons/network_icons/facebook_icon.png" alt="no img"></a>
+            </div>
+            <div class="footer-block__social_network">
+              <a href="#"><img src="images-icons/network_icons/odnoklasniki_icon.png" alt="no img"></a>
+            </div>
+            <div class="footer-block__social_network">
+              <a href="#"><img src="images-icons/network_icons/vk_icon.png" alt="no img"></a>
+            </div>
+            <div class="footer-block__social_network">
+              <a href="#"><img src="images-icons/network_icons/youtube_icon.png" alt="no img"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-block">
+          <p class="footer-block__text">© 2022 ARBYZ.BY - бесплатные объявления. Все логотипы и торговые марки на сайте
+            ARBYZ.BY являются собственностью их владельцев. Использование ARBYZ.BY или подача объявлений на сайте
+            означает принятие условий пользовательского соглашения ARBYZ.BY.</p>
+        </div>
+        <div class="footer-block footer-block__image"></div>
+        <div class="footer-underline"></div>
+      </div>
+    </footer>
   </body>
 </html>
