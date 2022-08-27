@@ -9,40 +9,40 @@ body {
 
 .main-banner__top {
   display: flex;
+  height: 7vh;
   background-image: url("images/banner1.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 7vh;
 }
 
 .banner-text {
   margin: auto;
-  text-align: center;
+  color: white;
   font-size: 1vw;
   font-weight: bold;
+  text-align: center;
   text-shadow: 0.1vw 0.1vw 0 #8AC449;
-  color: white;
 }
 
   /* header: поисковая строка */
 
 .main-header {
-  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
   text-align: center;
 }
 
 .header-search {
-  padding: 1rem 1rem 1rem 2rem;
-  margin: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 55%;
   height: 40px;
+  padding: 1rem 1rem 1rem 2rem;
   border-radius: 5px;
+  margin: 0 1rem;
   background-color: #CDE281;
 }
 
@@ -51,31 +51,31 @@ body {
   flex-basis: 75%;
 }
 .line-text {
-  padding: 0 0.7rem;
   width: 90%;
   height: 2.2rem;
-  outline: none;
+  padding: 0 0.7rem;
   border: none;
   border-radius: 3px 0 0 3px;
+  outline: none;
   color: #2A5C0B;
 }
 
 .line-button {
   width: 2.5rem;
   height: 2.2rem;
-  font-size: 1.25rem;
-  text-align: center;
   border: none;
   border-radius: 0 3px 3px 0;
-  color: #4C8562;
   background-color: white;
+  color: #4C8562;
+  font-size: 1.25rem;
+  text-align: center;
   cursor: pointer;
 }
 
 .line-button:hover {
-  color: white;
-  background: #F8343B;
   border-radius: 0 3px 3px 0;
+  background: #F8343B;
+  color: white;
 }
 
 .header-advert {
@@ -86,12 +86,12 @@ body {
 
 .advert__button {
   padding: 0.5rem;
-  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #F8343B;
+  color: white;
   font-weight: normal;
   font-size: 0.9rem;
-  border-radius: 3px;
-  color: white;
-  background-color: #F8343B;
+  text-transform: uppercase;
 }
 
 .advert__button:hover {
@@ -102,26 +102,26 @@ body {
   /* основная навигация */
 
 .main-nav-links {
-  padding: 1rem;
   display: flex;
   justify-content: center;
+  padding: 1rem;
   background-color: #8AC449;
 }
 
 .nav-links {
-  margin: 0;
+  position: absolute;
   display: flex;
   justify-content: center;
-  position: absolute;
+  margin: 0;
   list-style-type: none;
 }
 
 .nav-link a {
   padding: 1rem 2rem;
+  color: #2A5C0B;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
-  color: #2A5C0B;
 }
 
 .nav-links li a:hover {
@@ -131,32 +131,32 @@ body {
   background-position: center;
   background-size: 100%;
   */
-  background-color: #F8343B;
   border-radius: 50%;
+  background-color: #F8343B;
   color: white;
 }
 
 .circle {
   padding: 0 1.5rem;
-  font-size: 0.8rem;
   color: #CDE281;
+  font-size: 0.8rem;
 }
 
 .accounts-links {
+  position: relative;
+  left: 40%;
+  display: flex;
   padding: 0;
   margin: 0;
-  display: flex;
-  position: relative;
-  list-style: none;
-  left: 40%;
+  list-style-type: none;
 }
 
 .account-link a {
   padding: 0;
   margin: 0 1rem;
-  text-transform: none;
-  font-weight: normal;
   color: white;
+  font-weight: normal;
+  text-transform: none;
 }
 
 .account-link a:hover {
@@ -171,8 +171,8 @@ body {
   /* footer */
 
 .main-bottom_section {
-  font-size: 0.8rem;
   background-color: #8AC449;
+  font-size: 0.8rem;
 }
 
 .bottom_section-line {
@@ -185,10 +185,10 @@ body {
 }
 
 .bottom_section-line__text {
-  padding: 0 1.25rem;
   width: 50vw;
-  color: #294C2A;
+  padding: 0 1.25rem;
   border-left: 1px solid #294C2A;
+  color: #294C2A;
 }
 
 .main-footer {
@@ -222,8 +222,8 @@ body {
 }
 
 .footer-block__link {
-  text-decoration: none;
   color: #4C8562;
+  text-decoration: none;
 }
 
 .footer-block__link:hover {
@@ -251,17 +251,17 @@ body {
 }
 
 .footer-block__text {
+  width: 18vw;
   padding: 0.5rem 0 0 0;
   margin: 0;
-  width: 18vw;
-  font-size: 0.9rem;
   color: #9a9a9a;
+  font-size: 0.9rem;
 }
 
 .footer-block__image {
-  margin: 0;
   width: 150px;
   height: 150px;
+  margin: 0;
   background-image: url(images-icons/watermelon1.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
