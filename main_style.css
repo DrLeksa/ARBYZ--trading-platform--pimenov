@@ -188,7 +188,11 @@
   color: #2f2f2f;
 }
 
-.fa-comment-o, .fa-eye {
+  /* отступы для значков */
+.fa-eye,
+.fa-list-alt,
+.fa-comment-o,
+.fa-calendar {
   padding: 0 0.2rem;
 }
 
