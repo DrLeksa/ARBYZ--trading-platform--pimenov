@@ -202,15 +202,18 @@
   float: right;
   padding: 0.4rem 1.5rem;
   border-radius: 3px;
+  box-shadow: 4px 4px 3px -2px rgb(8, 49, 0, 50%);
   background-color: #4C8562;
   color: white;
   font-size: 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgba(8, 49, 0, 0.75);
 }
 
 .news-lines__button:hover {
   background-color: #F8343B;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
 
 .clear {
@@ -226,11 +229,13 @@
 
 .aside-header {
   padding: 1rem;
+  border-radius: 4px;
   background-color: #F8343B;
   color: white;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
 
 .aside-block {
@@ -267,14 +272,17 @@
 .aside-button__advert {
   padding: 0.5rem;
   border-radius: 3px;
+  box-shadow: 4px 4px 3px -2px rgb(8, 49, 0, 50%);
   background-color: #F8343B;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
 
 .aside-button__advert:hover {
   background-color: #4C8562;
+  text-shadow: 2px 2px 1px rgba(8, 49, 0, 0.75);
 }
 
   /* два баннера в 'aside' */
