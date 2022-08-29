@@ -27,6 +27,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  box-shadow: 4px 4px 3px -2px rgb(8, 49, 0, 50%);
   background-color: rgba(0, 0, 0, 0.5);
   filter: grayscale(1);
 }
@@ -43,23 +44,26 @@
 
 .button_box__category {
   text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
   cursor: default;
 }
 
 .main-menu__advert_box {
   display: flex;
   text-align: center;
+  border: 2px solid white;
   margin: 0.7rem 6.6rem;
+  box-shadow: 5px 5px 5px 0 rgb(8 49 0 / 50%);
 }
 
 .advert_box__button {
   padding: 1.5rem 4rem;
-  border: 2px solid;
   margin: auto;
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
 
 .advert_box__button:hover {
@@ -84,6 +88,7 @@
 .news-header {
   padding: 0.4rem;
   border-radius: 4px;
+  box-shadow: 4px 4px 3px -2px rgb(8, 49, 0, 50%);
   background-color: #8AC449;
   color: #2A5C0B;
   font-size: large;
@@ -107,6 +112,11 @@
   padding: 0.2rem;
   margin: 1rem;
   background-color: #F2F2F2;
+}
+
+.news-block__form:hover {
+  box-shadow: 0 8px 8px rgb(50 50 71 / 11%),
+              0 8px 16px rgb(50 50 71 / 9%);
 }
 
 .news-block__link {
@@ -228,8 +238,10 @@
 }
 
 .aside-header {
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 4px;
+  margin-bottom: 0.8rem;
+  box-shadow: 4px 4px 3px -2px rgb(8 49 0 / 50%);
   background-color: #F8343B;
   color: white;
   font-weight: bold;
