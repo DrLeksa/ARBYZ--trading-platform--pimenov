@@ -1,0 +1,129 @@
+p {
+  margin: 0;
+}
+
+.electronics {
+  margin: 2em;
+  font-size: 1rem;
+}
+
+.electronics__header {
+  padding: 0.4rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 3px -2px rgb(8, 49, 0, 50%);
+  background-color: #8AC449;
+  color: #2A5C0B;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
+}
+
+.fa-television {
+  padding: 0 0.4rem;
+  color: #CDE281;
+}
+
+.electronics__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.electronics__category {
+  width: 20%;
+  height: fit-content;
+  background-color: #F2F2F2;
+}
+
+.electronics__title {
+  text-align: center;
+  padding: 0.5em;
+  background-color: #F8343B;
+  color: white;
+  font-weight: bold;
+}
+
+.electronics__category--name {
+  margin: 1em;
+}
+
+.electronics__category--link {
+  text-decoration: none;
+  color: #2A5C0B;
+  cursor: pointer;
+}
+
+.electronics__category--icon {
+  content: url(../../images/i-halfarbuz.png);
+  padding-right: 0.5em;
+}
+
+.electronics__dropdown--link {
+  display: none;
+  margin: 0.5em 0;
+  text-decoration: none;
+  color: grey;
+  font-size: 0.9em;
+}
+
+.electronics__dropdown--link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.electronics__category--link:hover {
+  color: #F8343B;
+  font-weight: bold;
+  display: block;
+}
+
+.dropdown-content a {
+  display: grid;
+}
+
+.electronics__category--name:hover >
+.electronics__dropdown--link {
+  display: block;
+  padding-left: 3em;
+}
+
+/* Баннеры */
+
+.electronics__banners {
+  display: grid;
+  justify-items: end;
+}
+
+.big_banner--block {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.big_banner {
+  width: 80%;
+}
+
+.small_banners--block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small_banner--block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1em 0;
+}
+
+.small_banner {
+  width: 80%;
+}
+
+.big_banner:hover,
+.small_banner:hover {
+  box-shadow:
+    0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25),
+    0 0.5em 1em -0.5em rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.25em);
+}
