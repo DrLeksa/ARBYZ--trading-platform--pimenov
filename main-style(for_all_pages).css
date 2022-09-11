@@ -5,9 +5,9 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-  /* верхний баннер */
+/* верхний баннер */
 
-.main-banner--top {
+.banner__top-banner {
   display: flex;
   height: 7vh;
   background-image: url("images/banner1.png");
@@ -17,7 +17,7 @@ body {
 
   /* нижний баннер */
 
-.main-banner--bottom {
+.banner__bottom-banner {
   display: flex;
   height: 9vh;
   margin: 2rem 0;
@@ -28,7 +28,7 @@ body {
 
   /* текст баннеров */
 
-.main-banner__text {
+.banner__text {
   margin: auto;
   color: white;
   font-size: 1vw;

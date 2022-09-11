@@ -5,11 +5,11 @@
     <title>ARBYZ.BY Самые сочные объявления</title>
     <link rel="shortcut icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../main_nav_and_footer.css" type="text/css">
+    <link rel="stylesheet" href="../main-style(for_all_pages).css" type="text/css">
     <link rel="stylesheet" href="../page__registration/registration_and_advert_style.css" type="text/css">
   </head>
   <body>
-    <div class="main-banner--top"><p class="main-banner__text">БАННЕР</p></div>
+    <div class="banner__top-banner"><p class="banner__text">БАННЕР</p></div>
     <header class="main-header">
       <div class="main-header__logo"><img src="../images/images-icons/logo.png" alt="no logo"></div>
       <div class="main-header__search">
@@ -27,7 +27,7 @@
     <nav class="main-nav">
       <div class="main-nav__links-block">
         <ul class="main-nav__links">
-          <li class="main-nav__link"><a href="../main_page.html">Главная</a></li>
+          <li class="main-nav__link"><a href="../main-page.html">Главная</a></li>
           <li class="main-nav__link main-nav__link--circle"><i class="fa fa-circle"></i></li>
           <li class="main-nav__link"><a href="../page__news/news_page.html">Новости</a></li>
           <li class="main-nav__link main-nav__link--circle"><i class="fa fa-circle"></i></li>
@@ -44,41 +44,42 @@
       </div>
     </nav>
     <div class="pages_navigation">
-      <a class="pages_navigation__link" href="../main_page.html">Главная</a>
+      <a class="pages_navigation__link" href="../main-page.html">Главная</a>
       <span>/</span>
       <a class="pages_navigation__link" href="add_advert_page.html">Добавить объявление</a>
     </div>
-    <section class="add_advert">
-      <h2 class="add_advert-header">Подать бесплатное объявление на arbyz.by</h2>
-      <form class="add_advert-form" action="" >
-        <div class="add_advert-sections">
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">Я хочу</div>
-            <div class="add_advert-section__field">
-              <div class="registration-section__field-block">
-                <input class="section__field-radio" type="radio" id="to_buy" name="to_buy" value="to_buy" required>
+    <section class="add-advert">
+      <h2 class="add-advert__header">Подать бесплатное объявление на arbyz.by</h2>
+      <form class="add-advert__form" action="" >
+        <div class="add-advert__sections">
+          <div class="add-advert__section">
+            <div class="add-advert__name">Я хочу</div>
+            <div class="add-advert__field">
+              <div class="add-advert__variant--field">
+                <input class="add-advert__radio" type="radio" id="to_buy" name="to_buy" value="to_buy" required>
                 <label for="to_buy">Купить</label>
               </div>
-              <div class="registration-section__field-block">
-                <input class="section__field-radio" type="radio" id="to_sell" name="to_sell" value="to_sell" required>
+              <div class="add-advert__variant--field">
+                <input class="add-advert__radio" type="radio" id="to_sell" name="to_sell" value="to_sell" required>
                 <label for="to_sell">Продать</label>
               </div>
-              <div class="registration-section__field-block">
-                <input class="section__field-radio" type="radio" id="service" name="service" value="service" required>
+              <div class="add-advert__variant--field">
+                <input class="add-advert__radio" type="radio" id="service" name="service" value="service" required>
                 <label for="service">Услуга</label>
               </div>
             </div>
           </div>
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">Заголовок<span class="required_field">*</span></div>
-            <div class="add_advert-section__field">
-              <label for="advert_header"></label>
-              <input class="section__field-line_text" type="text" id="advert_header" name="advert_header" required>
+          <div class="add-advert__section">
+            <div class="add-advert__name">Заголовок<span class="registration__required-field">*</span></div>
+            <div class="add-advert__field">
+              <label for="add-advert__header-name"></label>
+              <input class="registration__line-text--field" type="text" id="add-advert__header-name"
+                     name="advert_header" required>
             </div>
           </div>
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">Рубрика<span class="required_field">*</span></div>
-            <div class="add_advert-section__field">
+          <div class="add-advert__section">
+            <div class="add-advert__name">Рубрика<span class="registration__required-field">*</span></div>
+            <div class="add-advert__field">
               <label></label>
               <select>
                 <option></option>
@@ -88,87 +89,90 @@
               </select>
             </div>
           </div>
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">Описание<span class="required_field">*</span></div>
-            <div class="add_advert-section__field">
+          <div class="add-advert__section">
+            <div class="add-advert__name">Описание<span class="registration__required-field">*</span></div>
+            <div class="add-advert__field">
               <label for="description"></label>
-              <textarea class="section__field-line_text" id="description" name="description" rows="8"
+              <textarea class="registration__line-text--field" id="description" name="description" rows="8"
                         cols=""></textarea>
             </div>
           </div>
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">Цена<span class="required_field">*</span></div>
-            <div class="add_advert-section__field">
+          <div class="add-advert__section">
+            <div class="add-advert__name">Цена<span class="registration__required-field">*</span></div>
+            <div class="add-advert__field">
               <label for="price"></label>
-              <input class="section__field-line_text" type="text" id="price" name="price" required>
+              <input class="registration__line-text--field" type="text" id="price" name="price" required>
             </div>
           </div>
-          <div class="add_advert-section bottom_border">
-            <div class="add_advert-section__name">Фотогорафии
-              <p class="photo-subtext">Объявления с фото вызывают больше доверия</p>
+          <div class="add-advert__section registration__section--bottom-border">
+            <div class="add-advert__name">Фотогорафии
+              <p class="registration__name--subtext">Объявления с фото вызывают больше доверия</p>
             </div>
-            <div class="add_advert-section__field">
-              <label for="advert_image"></label>
-              <input type="file" id="advert_image" name="advert_image" accept=".jpg, .jpeg, .png, .img">
+            <div class="add-advert__field">
+              <label for="add-advert__image"></label>
+              <input type="file" id="add-advert__image" name="advert_image" accept=".jpg, .jpeg, .png, .img">
             </div>
           </div>
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">Вы представляете</div>
-            <div class="add_advert-section__field">
-              <div class="add_advert-section__field-block">
-                <input class="section__field-radio" type="radio" id="private_person" name="user" value="private_person"
+          <div class="add-advert__section">
+            <div class="add-advert__name">Вы представляете</div>
+            <div class="add-advert__field">
+              <div class="add-advert__variant--field">
+                <input class="add-advert__radio" type="radio" id="private_person" name="user" value="private_person"
                        required>
                 <label for="private_person">Частное лицо</label>
               </div>
-              <div class="add_advert-section__field-block">
-                <input class="section__field-radio" type="radio" id="company" name="user" value="company" required>
+              <div class="add-advert__variant--field">
+                <input class="add-advert__radio" type="radio" id="company" name="user" value="company" required>
                 <label for="company">Компания</label>
               </div>
             </div>
           </div>
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">Контактное лицо<span class="required_field">*</span></div>
-            <div class="add_advert-section__field">
-              <label for="contact_person"></label>
-              <input class="section__field-line_text" type="text" id="contact_person" name="contact_person" required>
+          <div class="add-advert__section">
+            <div class="add-advert__name">Контактное лицо<span class="registration__required-field">*</span></div>
+            <div class="add-advert__field">
+              <label for="add-advert__contact-person"></label>
+              <input class="registration__line-text--field" type="text" id="add-advert__contact-person"
+                     name="contact_person" required>
             </div>
           </div>
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">E-mail адрес<span class="required_field">*</span></div>
-            <div class="add_advert-section__field">
-              <label for="user_email"></label>
-              <input class="section__field-line_text" type="email" id="user_email" name="user_email" required>
+          <div class="add-advert__section">
+            <div class="add-advert__name">E-mail адрес<span class="registration__required-field">*</span></div>
+            <div class="add-advert__field">
+              <label for="add-advert__user-email"></label>
+              <input class="registration__line-text--field" type="email" id="add-advert__user-email"
+                     name="user_email" required>
             </div>
           </div>
-          <div class="add_advert-section">
-            <div class="add_advert-section__name">Номер телефона</div>
-            <div class="add_advert-section__field">
-              <label for="advert_phone"></label>
-              <input class="section__field-line_text" type="text" id="advert_phone" name="advert_phone">
+          <div class="add-advert__section">
+            <div class="add-advert__name">Номер телефона</div>
+            <div class="add-advert__field">
+              <label for="add-advert__advert-phone"></label>
+              <input class="registration__line-text--field" type="text" id="add-advert__advert-phone"
+                     name="advert_phone">
             </div>
           </div>
-          <div class="add_advert-section bottom_border">
-            <div class="add_advert-section__name">Skype</div>
-            <div class="add_advert-section__field">
-              <label for="skype"></label>
-              <input class="section__field-line_text" type="text" id="skype" name="skype">
+          <div class="add-advert__section registration__section--bottom-border">
+            <div class="add-advert__name">Skype</div>
+            <div class="add-advert__field">
+              <label for="add-advert__skype"></label>
+              <input class="registration__line-text--field" type="text" id="add-advert__skype" name="skype">
             </div>
           </div>
-          <div class="data_processing-block">
-            <div class="data_processing-block__header">Согласие на обработку данных</div>
-            <div class="data_processing-block__content">
+          <div class="registration__data-processing">
+            <div class="registration__data-processing__header">Согласие на обработку данных</div>
+            <div class="registration__data-processing__content">
               <div>
-                <input class="data_processing-block__radio" type="radio" id="data_processing" name="data_processing"
+                <input class="data_processing-block__radio" type="radio" id="add-advert__data-processing" name="data_processing"
                        required>
               </div>
-              <label class="data_processing-block__text" for="data_processing"><span class="required_field">*</span>Я
+              <label class="registration__data-processing__text" for="add-advert__data-processing"><span class="registration__required-field">*</span>Я
                 соглашаюсь с <a class="block__text-link" href="#">правилами использования сервиса</a>, а также с
                 передачей и обработкой моих данных в ARBYZ.BY Я подтверждаю своё совершеннолетие и ответственность за
                 размещение объявления.</label>
             </div>
           </div>
-          <div class="add_advert-section__button">
-            <button class="add_advert-section__button_style" type="submit">Опубликовать</button>
+          <div class="add-advert__button">
+            <button class="add-advert__button--style" type="submit">Опубликовать</button>
           </div>
         </div>
       </form>

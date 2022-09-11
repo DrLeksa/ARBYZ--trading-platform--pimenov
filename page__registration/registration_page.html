@@ -5,11 +5,11 @@
     <title>ARBYZ.BY Самые сочные объявления</title>
     <link rel="shortcut icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../main_nav_and_footer.css" type="text/css">
+    <link rel="stylesheet" href="../main-style(for_all_pages).css" type="text/css">
     <link rel="stylesheet" href="registration_and_advert_style.css" type="text/css">
   </head>
   <body>
-    <div class="main-banner--top"><p class="main-banner__text">БАННЕР</p></div>
+    <div class="banner__top-banner"><p class="banner__text">БАННЕР</p></div>
     <header class="main-header">
       <div class="main-header__logo"><img src="../images/images-icons/logo.png" alt="no logo"></div>
       <div class="main-header__search">
@@ -27,7 +27,7 @@
     <nav class="main-nav">
       <div class="main-nav__links-block">
         <ul class="main-nav__links">
-          <li class="main-nav__link"><a href="../main_page.html">Главная</a></li>
+          <li class="main-nav__link"><a href="../main-page.html">Главная</a></li>
           <li class="main-nav__link main-nav__link--circle"><i class="fa fa-circle"></i></li>
           <li class="main-nav__link"><a href="../page__news/news_page.html">Новости</a></li>
           <li class="main-nav__link main-nav__link--circle"><i class="fa fa-circle"></i></li>
@@ -44,69 +44,71 @@
       </div>
     </nav>
     <div class="pages_navigation">
-      <a class="pages_navigation__link" href="../main_page.html">Главная</a>
+      <a class="pages_navigation__link" href="../main-page.html">Главная</a>
       <span>/</span>
       <a class="pages_navigation__link" href="registration_page.html">Регистрация</a>
     </div>
     <section class="registration">
-      <h2 class="registration-header">Заполните анкету пользователя для регистрации на arbyz.by</h2>
-      <form class="registration-form" action="" >
-        <div class="registration-sections">
-          <div class="registration-section">
-            <div class="registration-section__name">Вы представляете</div>
-            <div class="registration-section__field">
-              <div class="registration-section__field-block">
-                <input class="section__field-radio" type="radio" id="private_person" name="user" value="private_person"
-                       required>
+      <h2 class="registration__header">Заполните анкету пользователя для регистрации на arbyz.by</h2>
+      <form class="registration__form" action="" >
+        <div class="registration__sections">
+          <div class="registration__section">
+            <div class="registration__name">Вы представляете</div>
+            <div class="registration__field">
+              <div class="add-advert__variant--field">
+                <input class="add-advert__radio" type="radio" id="private_person" name="user"
+                       value="private_person" required>
                 <label for="private_person">Частное лицо</label>
               </div>
-              <div class="registration-section__field-block">
-                <input class="section__field-radio" type="radio" id="company" name="user" value="company" required>
+              <div class="add-advert__variant--field">
+                <input class="add-advert__radio" type="radio" id="company" name="user"
+                       value="company" required>
                 <label for="company">Компания</label>
               </div>
             </div>
           </div>
-          <div class="registration-section">
-            <div class="registration-section__name">Имя и Фамилия<span class="required_field">*</span></div>
-            <div class="registration-section__field">
+          <div class="registration__section">
+            <div class="registration__name">Имя и Фамилия<span class="registration__required-field">*</span></div>
+            <div class="registration__field">
               <label for="user_name"></label>
-              <input class="section__field-line_text" type="text" id="user_name" name="user_name" required>
+              <input class="registration__line-text--field" type="text" id="user_name" name="user_name" required>
             </div>
           </div>
-          <div class="registration-section">
-            <div class="registration-section__name">Фотогорафия
-              <p class="photo-subtext">Объявления с фото вызывают больше доверия</p>
+          <div class="registration__section">
+            <div class="registration__name">Фотогорафия
+              <p class="registration__name--subtext">Объявления с фото вызывают больше доверия</p>
             </div>
-            <div class="registration-section__field">
-              <label for="profile_image"></label>
-              <input type="file" id="profile_image" name="profile_image" accept=".jpg, .jpeg, .png, .img">
-            </div>
-          </div>
-          <div class="registration-section">
-            <div class="registration-section__name">Номер телефона</div>
-            <div class="registration-section__field">
-              <label for="user_phone"></label>
-              <input class="section__field-line_text" type="text" id="user_phone" name="user_phone">
+            <div class="registration__field">
+              <label for="registration__profile-image"></label>
+              <input type="file" id="registration__profile-image" name="profile_image"
+                     accept=".jpg, .jpeg, .png, .img">
             </div>
           </div>
-          <div class="registration-section">
-            <div class="registration-section__name">Область</div>
-            <div class="registration-section__field">
+          <div class="registration__section">
+            <div class="registration__name">Номер телефона</div>
+            <div class="registration__field">
+              <label for="registration__user-phone"></label>
+              <input class="registration__line-text--field" type="text" id="registration__user-phone" name="user_phone">
+            </div>
+          </div>
+          <div class="registration__section">
+            <div class="registration__name">Область</div>
+            <div class="registration__field">
               <label></label>
-              <select class="section__field-line_text">
-                <option class="section__field-option" disabled selected></option>
-                <option class="section__field-option" value="">Брестская</option>
-                <option class="section__field-option" value="">Витебская</option>
-                <option class="section__field-option" value="">Гомельская</option>
-                <option class="section__field-option" value="">Гродненская</option>
-                <option class="section__field-option" value="">Минская</option>
-                <option class="section__field-option" value="">Могилевская</option>
+              <select class="registration__line-text--field">
+                <option class="registration__option" disabled selected></option>
+                <option class="registration__option" value="">Брестская</option>
+                <option class="registration__option" value="">Витебская</option>
+                <option class="registration__option" value="">Гомельская</option>
+                <option class="registration__option" value="">Гродненская</option>
+                <option class="registration__option" value="">Минская</option>
+                <option class="registration__option" value="">Могилевская</option>
               </select>
             </div>
           </div>
-          <div class="registration-section">
-            <div class="registration-section__name">Город</div>
-            <div class="registration-section__field">
+          <div class="registration__section">
+            <div class="registration__name">Город</div>
+            <div class="registration__field">
               <label></label>
               <select>
                 <option></option>
@@ -116,57 +118,62 @@
               </select>
             </div>
           </div>
-          <div class="registration-section">
-            <div class="registration-section__name">E-mail адрес<span class="required_field">*</span></div>
-            <div class="registration-section__field">
-              <label for="user_email"></label>
-              <input class="section__field-line_text" type="email" id="user_email" name="user_email" required>
+          <div class="registration__section">
+            <div class="registration__name">E-mail адрес<span class="registration__required-field">*</span></div>
+            <div class="registration__field">
+              <label for="registration__user-email"></label>
+              <input class="registration__line-text--field" type="email" id="registration__user-email"
+                     name="user_email" required>
             </div>
           </div>
-          <div class="registration-section">
-            <div class="registration-section__name">Подтвердите e-mail</div>
-            <div class="registration-section__field">
-              <label for="user_re-email"></label>
-              <input class="section__field-line_text" type="email" id="user_re-email" name="user_re-email" required>
+          <div class="registration__section">
+            <div class="registration__name">Подтвердите e-mail</div>
+            <div class="registration__field">
+              <label for="registration__user-re-email"></label>
+              <input class="registration__line-text--field" type="email" id="registration__user-re-email"
+                     name="user_re-email" required>
             </div>
           </div>
-          <div class="registration-section">
-            <div class="registration-section__name">Пароль<span class="required_field">*</span></div>
-            <div class="registration-section__field">
-              <label for="user_password"></label>
-              <input class="section__field-line_text" type="password" id="user_password" name="user_password" required>
+          <div class="registration__section">
+            <div class="registration__name">Пароль<span class="registration__required-field">*</span></div>
+            <div class="registration__field">
+              <label for="registration__user-password"></label>
+              <input class="registration__line-text--field" type="password" id="registration__user-password"
+                     name="user_password" required>
             </div>
           </div>
-          <div class="registration-section">
-            <div class="registration-section__name">Подтвердите пароль</div>
-            <div class="registration-section__field">
-              <label for="user_re-password"></label>
-              <input class="section__field-line_text" type="password" id="user_re-password" name="user_re-password"
+          <div class="registration__section">
+            <div class="registration__name">Подтвердите пароль</div>
+            <div class="registration__field">
+              <label for="registration__user-re-password"></label>
+              <input class="registration__line-text--field" type="password" id="registration__user-re-password"
+                     name="user_re-password"
                      required>
             </div>
           </div>
-          <div class="registration-section bottom_border"> <!-- капча -->
-            <div class="registration-section__name">"Капча"</div>
-            <div class="registration-section__field">
+          <div class="registration__section registration__section--bottom-border"> <!-- капча -->
+            <div class="registration__name">"Капча"</div>
+            <div class="registration__field">
               <label for="captcha"></label>
-              <input class="section__field-line_text" type="text" id="captcha" name="captcha" required>
+              <input class="registration__line-text--field" type="text" id="captcha" name="captcha" required>
             </div>
           </div>
-          <div class="data_processing-block">
-            <div class="data_processing-block__header">Согласие на обработку данных</div>
-            <div class="data_processing-block__content">
+          <div class="registration__data-processing">
+            <div class="registration__data-processing__header">Согласие на обработку данных</div>
+            <div class="registration__data-processing__content">
               <div>
-                <input class="data_processing-block__radio" type="radio" id="data_processing" name="data_processing"
-                       required>
+                <input class="registration__data-processing--radio" type="radio" id="registration__data-processing"
+                       name="data_processing" required>
               </div>
-              <label class="data_processing-block__text" for="data_processing"><span class="required_field">*</span>Я
-              соглашаюсь с <a class="block__text-link" href="#">правилами использования сервиса</a>, а также с
-              передачей и обработкой моих данных в ARBYZ.BY Я подтверждаю своё совершеннолетие и ответственность за
-              размещение объявления.</label>
+              <label class="registration__data-processing__text" for="registration__data-processing">
+                <span class="registration__required-field">*</span>Я соглашаюсь с
+                <a class="block__text-link" href="#">правилами использования сервиса</a>, а также с передачей и
+                обработкой моих данных в ARBYZ.BY Я подтверждаю своё совершеннолетие и ответственность за размещение
+                объявления.</label>
             </div>
           </div>
-          <div class="registration-section__button">
-            <button class="registration-section__button_style" type="submit">Создать</button>
+          <div class="registration__button">
+            <button class="registration__button--style" type="submit">Создать</button>
           </div>
         </div>
       </form>

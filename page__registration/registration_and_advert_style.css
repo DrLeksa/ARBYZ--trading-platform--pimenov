@@ -1,22 +1,22 @@
 .registration,
-.add_advert {
+.add-advert {
   margin: 2rem;
 }
 
-.registration-header,
-.add_advert-header {
+.registration__header,
+.add-advert__header {
   color: #2A5C0B;
   text-align: center;
   text-shadow: 2px 2px 5px rgb(11 128 0 / 60%);
 }
 
-.registration-form,
-.add_advert-form {
+.registration__form,
+.add-advert__form {
   margin: 0 auto;
 }
 
-.registration-sections,
-.add_advert-sections {
+.registration__sections,
+.add-advert__sections {
   display: flex;
   flex-direction: column;
   width: 45rem;
@@ -24,14 +24,14 @@
   margin: auto;
 }
 
-.registration-section,
-.add_advert-section {
+.registration__section,
+.add-advert__section {
   display: flex;
   flex-wrap: wrap;
 }
 
-.registration-section__name,
-.add_advert-section__name {
+.registration__name,
+.add-advert__name {
   box-sizing: border-box;
   width: 16rem;
   padding: 0.5rem;
@@ -40,25 +40,25 @@
   text-align: right;
 }
 
-.registration-section__field,
-.add_advert-section__field {
+.registration__field,
+.add-advert__field {
   display: flex;
   width: 45%;
   padding: 0.2rem 1rem;
   margin: 0.3rem 1rem;
 }
 
-.registration-section__field-block,
-.add_advert-section__field-block {
+.add-advert__variant--field,
+.add-advert__variant--field {
   padding-right: 1rem;
 }
 
-.section__field-radio {
+.add-advert__radio {
   margin: 0.7rem 0;
   cursor: pointer;
 }
 
-.section__field-line_text {
+.registration__line-text--field {
   width: 100%;
   height: 100%;
   padding: 0 0.5rem;
@@ -67,11 +67,11 @@
   outline: none;
 }
 
-.section__field-line_text:focus {
+.registration__line-text--field:focus {
   border-color: #2A5C0B;
 }
 
-.photo-subtext {
+.registration__name--subtext {
   padding: 0.2rem;
   margin: 0 0 0 4rem;
   color: gray;
@@ -79,26 +79,26 @@
   font-weight: normal;
 }
 
-.required_field {
+.registration__required-field {
   margin: 0.2rem;
   color: red;
 }
 
-.data_processing-block {
+.registration__data-processing {
   padding: 0 1rem 1rem;
   margin: 0 1rem 1rem;
 }
 
-.data_processing-block__header {
+.registration__data-processing__header {
   padding: 0.5rem 0 1rem;
   font-weight: bold;
 }
 
-.data_processing-block__content {
+.registration__data-processing__content {
   display: flex;
 }
 
-.data_processing-block__text {
+.registration__data-processing__text {
   padding: 0 0.5rem;
   color: gray;
   font-size: 0.9rem;
@@ -112,13 +112,13 @@
   text-decoration: none;
 }
 
-.registration-section__button,
-.add_advert-section__button {
+.registration__button,
+.add-advert__button {
   text-align: center;
 }
 
-.registration-section__button_style,
-.add_advert-section__button_style {
+.registration__button--style,
+.add-advert__button--style {
   padding: 0.5rem 3rem;
   border: none;
   border-radius: 4px;
@@ -132,12 +132,12 @@
   cursor: pointer;
 }
 
-.registration-section__button_style:hover,
-.add_advert-section__button_style:hover {
+.registration__button--style:hover,
+.add-advert__button--style:hover {
   background-color: #4C8562;
 }
 
-.bottom_border {
+.registration__section--bottom-border {
   padding-bottom: 2rem;
   border-bottom: 1px solid gray;
   margin-bottom: 2rem;
