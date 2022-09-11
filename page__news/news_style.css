@@ -79,7 +79,7 @@
 .news_page-banners__right1 {
   display: flex;
   height: 470px;
-  background-image: url(images/banner_news_1.jpg);
+  background-image: url(../images/banner_news_1.jpg);
   background-size: 100%;
 }
 
@@ -87,7 +87,7 @@
   display: flex;
   height: 225px;
   margin-top: 1rem;
-  background-image: url(images/banner_news_2.jpg);
+  background-image: url(../images/banner_news_2.jpg);
   background-size: 100%;
 }
 
@@ -95,7 +95,7 @@
 
 .news_page-video_reports {
   margin: 1.4rem 0;
-  background-image: url(images/terrikony_1.jpg);
+  background-image: url(../images/terrikony_1.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -217,7 +217,7 @@
 .news_list {
   padding: 0.5rem;
   border-radius: 4px;
-  background-image: url("images/arbyz_icon_2.png");
+  background-image: url("../images/arbyz_icon_2.png");
   background-position-x: -5px;
   background-position-y: center;
   background-size: 4%;
@@ -226,7 +226,7 @@
 
 .news_list:nth-child(odd) {
   background-color: rgba(116, 199, 19, 0.3);
-  background-image: url("images/arbyz_icon.png");
+  background-image: url("../images/arbyz_icon.png");
   background-position-x: left;
   background-position-y: center;
   background-size: 3%;
