@@ -1,1 +1,1 @@
-css для "add_advert_page.html" находиться в папке "page__registraton"
+css для "add_advert_page.html" находиться в папке "page__registration"

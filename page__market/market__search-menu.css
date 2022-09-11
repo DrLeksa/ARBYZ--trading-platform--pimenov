@@ -34,7 +34,7 @@ p {
   padding-right: 0.5em;
 }
 
-.sorting__field_line {
+.sorting__field-line {
   border: 1px solid lightgray;
   border-radius: 4px;
   outline: none;
@@ -43,7 +43,7 @@ p {
   padding: 0 0.5em;
   color: #2A5C0B;
 }
-.sorting__field_line:focus {
+.sorting__field-line:focus {
   border-color: #2A5C0B;
 }
 
@@ -139,7 +139,7 @@ p {
     padding: 0;
   }
 
-  .sorting__field_line {
+  .sorting__field-line {
     margin-top: 0.4em;
   }
 }

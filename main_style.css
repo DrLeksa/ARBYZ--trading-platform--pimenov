@@ -13,7 +13,7 @@
   padding: 0.7rem 0;
 }
 
-.main-menu__button_box {
+.main-menu__button-box {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.button_box__background {
+.main-menu__box-background {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -32,23 +32,23 @@
   filter: grayscale(1);
 }
 
-.button_box__background:hover {
+.main-menu__box-background:hover {
   background-color: rgba(120, 0, 0, 0.8);
   filter: none;
 }
 
-.button_box__icon {
+.main-menu__box-icon {
   display: flex;
   margin: 0.9rem auto;
 }
 
-.button_box__category {
+.main-menu__category-name {
   text-transform: uppercase;
   text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
   cursor: default;
 }
 
-.main-menu__advert_box {
+.main-menu__advert-box {
   display: flex;
   text-align: center;
   border: 2px solid white;
@@ -56,7 +56,7 @@
   box-shadow: 5px 5px 5px 0 rgb(8 49 0 / 50%);
 }
 
-.advert_box__button {
+.main-menu__advert-button {
   padding: 1.5rem 4rem;
   margin: auto;
   color: white;
@@ -66,7 +66,7 @@
   text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
 
-.advert_box__button:hover {
+.main-menu__advert-button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -74,18 +74,18 @@
 
   /* новости в блоках */
 
-.main-block__news {
+.main-news {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.main-news {
+.main-news__section {
   width: 55%;
   margin: 2rem 1rem;
 }
 
-.news-header {
+.main-news__header {
   padding: 0.4rem;
   border-radius: 4px;
   box-shadow: 4px 4px 3px -2px rgb(8, 49, 0, 50%);
@@ -101,43 +101,43 @@
   color: #CDE281;
 }
 
-.news-blocks {
+.main-news__blocks {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.news-block__form {
+.main-news__block {
   width: 310px;
   padding: 0.2rem;
   margin: 1rem;
   background-color: #F2F2F2;
 }
 
-.news-block__form:hover {
+.main-news__block:hover {
   box-shadow: 0 8px 8px rgb(50 50 71 / 11%),
               0 8px 16px rgb(50 50 71 / 9%);
 }
 
-.news-block__link {
+.main-news__link {
   color: #2f2f2f;
   font-weight: bold;
   text-decoration: none;
 }
 
-.news-block__link:hover {
+.main-news__link:hover {
   text-decoration: underline;
 }
 
-.news-block {
+.main-news__image-block {
   position: relative;
 }
 
-.block-image {
+.main-news__image {
   width: 310px;
 }
 
-.activity {
+.main-news__activity {
   position: absolute;
   bottom: 6px;
   padding: 0 0.5rem;
@@ -149,53 +149,53 @@
 
   /* доп новости, в строку  */
 
-.news-lines {
+.main-news__lines {
   margin: 1rem;
 }
 
-.news-line {
+.main-news__line {
   display: flex;
   margin: 1rem 0;
 }
 
-.line-image {
+.main-news__line-image {
   width: 200px;
 }
 
-.news-line__info {
+.main-news__line-content {
   margin: 0 0 0 1rem;
   list-style-type: none;
 }
 
-.info-activity {
+.main-news__line-activity {
   padding: 0 0 0.6rem 0;
   margin: 0;
   color: #9d9d9d;
 }
 
-.info-activity__comments {
+.main-news__comments {
   padding: 0 0.3rem;
   margin: 0 0.3rem;
   border-left: 1px solid #808080;
   border-right: 1px solid #808080;
 }
 
-.info-link {
+.main-news__news-content {
   text-decoration: none;
 }
 
-.info-link:hover {
+.main-news__news-content:hover {
   text-decoration: underline;
 }
 
-.info-header {
+.main-news__title {
   padding: 0 0 0.6rem 0;
   margin: 0;
   color: black;
   font-weight: bold;
 }
 
-.info-text {
+.main-news__text {
   margin: 0;
   color: #2f2f2f;
 }
@@ -208,7 +208,7 @@
   padding: 0 0.2rem;
 }
 
-.news-lines__button {
+.main-news__button {
   float: right;
   padding: 0.4rem 1.5rem;
   border-radius: 3px;
@@ -221,7 +221,7 @@
   text-shadow: 2px 2px 1px rgba(8, 49, 0, 0.75);
 }
 
-.news-lines__button:hover {
+.main-news__button:hover {
   background-color: #F8343B;
   text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
@@ -230,14 +230,15 @@
   clear: both;
 }
 
-  /* спецпредложения */
+  /* спецпредложения - special-offers
+    (находятся в main-news) */
 
-.main-aside {
+.special-offers {
   width: 330px;
   margin: 2rem 1rem;
 }
 
-.aside-header {
+.special-offers__header {
   padding: 0.5rem;
   border-radius: 4px;
   margin-bottom: 0.8rem;
@@ -250,7 +251,7 @@
   text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
 
-.aside-block {
+.special-offers__block {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -258,13 +259,13 @@
   background-color: #F2F2F2;
 }
 
-.aside-image {
+.special-offers__image {
   width: 60px;
   padding: 0.6rem;
   border-radius: 50px;
 }
 
-.aside-link {
+.special-offers__link {
   flex-basis: 240px;
   padding: 0.3rem;
   margin: auto;
@@ -272,16 +273,16 @@
   text-decoration: none;
 }
 
-.aside-link:hover{
+.special-offers__link:hover{
   text-decoration: underline;
 }
 
-.button-block {
+.special-offers__button-block {
   padding: 1rem 2.5rem;
   border: none;
 }
 
-.aside-button__advert {
+.special-offers__button {
   padding: 0.5rem;
   border-radius: 3px;
   box-shadow: 4px 4px 3px -2px rgb(8, 49, 0, 50%);
@@ -292,14 +293,14 @@
   text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
 
-.aside-button__advert:hover {
+.special-offers__button:hover {
   background-color: #4C8562;
   text-shadow: 2px 2px 1px rgba(8, 49, 0, 0.75);
 }
 
   /* два баннера в 'aside' */
 
-.main-banner_small-1 {
+.main-banner_small {
   display: flex;
   height: 185px;
   margin: 2rem 0 0;
@@ -307,29 +308,11 @@
   background-size: 100%;
 }
 
-.main-banner_small-2 {
+.main-banner_medium {
   display: flex;
   height: 352px;
   margin: 2rem 0 0;
   background-image: url(images/banner_small_2.jpg);
   background-size: 160%;
-  background-repeat: no-repeat;
-}
-
-.banner-text {
-  margin: auto;
-  color: white;
-  font-size: 1vw;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 0.1vw 0.1vw 0 #8AC449;
-}
-
-.main-banner__bottom {
-  display: flex;
-  height: 9vh;
-  margin: 2rem 0;
-  background-image: url(images/banner2.jpg);
-  background-size: 100%;
   background-repeat: no-repeat;
 }
