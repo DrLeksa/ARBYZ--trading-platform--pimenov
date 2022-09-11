@@ -208,7 +208,7 @@ body {
 }
 
 .list_background {
-  background-image: url(images-icons/watermelon2.png);
+  background-image: url(images/images-icons/watermelon2.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
@@ -264,7 +264,7 @@ body {
   width: 150px;
   height: 150px;
   margin: 0;
-  background-image: url(images-icons/watermelon1.png);
+  background-image: url(images/images-icons/watermelon1.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
