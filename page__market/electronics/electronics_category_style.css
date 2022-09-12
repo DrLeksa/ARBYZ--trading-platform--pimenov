@@ -42,24 +42,24 @@ p {
   background-color: #F8343B;
   color: white;
   font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  box-shadow: 4px 4px 3px -2px rgb(8 49 0 / 50%);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
 }
 
-.electronics__category--name {
+.electronics__category-name {
   margin: 1em;
 }
 
-.electronics__category--link {
+.electronics__category-link {
   text-decoration: none;
   color: #2A5C0B;
   cursor: pointer;
 }
 
-.electronics__category--icon {
-  content: url(../../images/i-halfarbuz.png);
-  padding-right: 0.5em;
-}
-
-.electronics__dropdown--link {
+.electronics__dropdown-link {
   display: none;
   margin: 0.5em 0;
   text-decoration: none;
@@ -67,12 +67,12 @@ p {
   font-size: 0.9em;
 }
 
-.electronics__dropdown--link:hover {
+.electronics__dropdown-link:hover {
   font-weight: bold;
   text-decoration: underline;
 }
 
-.electronics__category--link:hover {
+.electronics__category-link:hover {
   color: #F8343B;
   font-weight: bold;
   display: block;
@@ -82,8 +82,8 @@ p {
   display: grid;
 }
 
-.electronics__category--name:hover >
-.electronics__dropdown--link {
+.electronics__category-name:hover >
+.electronics__dropdown-link {
   display: block;
   padding-left: 3em;
 }

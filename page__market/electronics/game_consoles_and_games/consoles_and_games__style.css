@@ -1,0 +1,131 @@
+p {
+  margin: 0;
+}
+
+/* игровая зона */
+
+.game-zone {
+  margin: 1em;
+  font-size: 1rem;
+}
+
+.game-zone__header {
+  padding: 0.4em;
+  border-radius: 4px;
+  box-shadow: 4px 4px 3px -2px rgb(8, 49, 0, 50%);
+  background-color: #8AC449;
+  color: #2A5C0B;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
+}
+
+.fa-gamepad {
+  padding: 0 0.4em;
+  color: #CDE281;
+}
+
+.game-zone__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.game-zone__block {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  margin: 0.5em;
+}
+
+.game-zone__block:hover {
+  box-shadow: 0 8px 8px rgb(50 50 71 / 11%),
+              0 8px 16px rgb(50 50 71 / 9%);
+}
+
+.game-zone__block--blue:hover {
+  border: 1px solid #2020fc;
+  box-shadow: 0 8px 8px rgba(0, 0, 255, 0.11),
+              0 8px 16px rgba(0, 0, 255, 0.09);
+}
+
+.game-zone__block--green:hover {
+  border: 1px solid #0bce0b;
+  box-shadow: 0 8px 8px rgba(9, 255, 0, 0.11),
+              0 8px 16px rgba(26, 255, 0, 0.09);
+}
+
+.game-zone__block--red:hover {
+  border: 1px solid #b21010;
+  box-shadow: 0 8px 8px rgba(255, 0, 0, 0.11),
+              0 8px 16px rgba(255, 0, 0, 0.09);
+}
+
+.game-zone__image {
+  padding: 0.5em;
+  width: 220px;
+  height: 150px;
+}
+
+.game-zone__text {
+  margin: 0.5em 0;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* категории и маркет */
+
+.game-goods {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  justify-content: space-evenly;
+}
+
+.game-goods__category {
+  background-color: #F2F2F2;
+}
+
+.game-goods__title {
+  text-align: center;
+  padding: 0.5em;
+  background-color: #F8343B;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  box-shadow: 4px 4px 3px -2px rgb(8 49 0 / 50%);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
+}
+
+.game-goods__category-name {
+  padding: 0.5em;
+  display: grid;
+}
+
+.game-goods__category-link {
+  text-decoration: none;
+  color: #2A5C0B;
+  cursor: pointer;
+}
+
+.game-goods__category-link:hover {
+  color: #F8343B;
+  font-weight: bold;
+  display: block;
+}
+
+
+
+.popular-goods__block {
+  width: 220px;
+  height: 150px;
+}
+
+.popular-goods__image {
+  width: 220px;
+  height: 150px;
+}
