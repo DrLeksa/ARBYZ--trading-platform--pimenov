@@ -107,29 +107,29 @@
   justify-content: space-around;
 }
 
-.news-page__block {
+.main-news__block {
   width: 310px;
   padding: 0.2rem;
   margin: 1rem;
   background-color: #F2F2F2;
 }
 
-.news-page__block:hover {
+.main-news__block:hover {
   box-shadow: 0 8px 8px rgb(50 50 71 / 11%),
   0 8px 16px rgb(50 50 71 / 9%);
 }
 
-.news-page__link--block {
+.main-news__link--block {
   color: #2f2f2f;
   font-weight: bold;
   text-decoration: none;
 }
 
-.news-page__link--block:hover {
+.main-news__link--block:hover {
   text-decoration: underline;
 }
 
-.news-page__big-image--block {
+.main-page__image--block {
   position: relative;
 }
 
@@ -137,7 +137,7 @@
   width: 310px;
 }
 
-.news-page__activity {
+.main-page__activity {
   position: absolute;
   bottom: 6px;
   padding: 0 0.5rem;
@@ -216,10 +216,6 @@
 .main-news__button:hover {
   background-color: #F8343B;
   text-shadow: 2px 2px 1px rgb(11 128 0 / 75%);
-}
-
-.clear {
-  clear: both;
 }
 
 /* спецпредложения - special-offers

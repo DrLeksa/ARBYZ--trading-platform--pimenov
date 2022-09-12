@@ -26,12 +26,31 @@ body {
   background-repeat: no-repeat;
 }
 
+/* два боковых баннера на news_page */
+
+.news__bigger-banner {
+  display: flex;
+  width: 300px;
+  height: 500px;
+  background-image: url(images/banner_news_1.jpg);
+  background-size: 100%;
+}
+
+.news__smaller-banner {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  margin-top: 1rem;
+  background-image: url(images/banner_news_2.jpg);
+  background-size: 100%;
+}
+
   /* текст баннеров */
 
 .banner__text {
   margin: auto;
   color: white;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
   text-shadow: 0.1vw 0.1vw 0 #8AC449;
@@ -307,6 +326,10 @@ body {
 .pages_navigation__link:hover {
   color: #2A5C0B;
   text-decoration: none;
+}
+
+.clear {
+  clear: both;
 }
 
 
